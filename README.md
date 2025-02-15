@@ -48,6 +48,12 @@
 4. Предоставить манифесты, а также скриншоты или вывод необходимых команд.
 
 #### Решение
+Манифест [deployment](./deploy2.yaml)
+
+Для выпуска tls сертификата и ключа
+```sh
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout tls.key -out tls.crt -subj "/CN=test.ingress.ru/O=test.ingress.ru"
+```
 
 ------
 
